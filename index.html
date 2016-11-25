@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+
+  </head>
+
+  <body>
+  <ul >
+  <li>ngfor for fatching data from another class
+    <br>
+    <my-app>Loading AppComponent content here ...</my-app>
+  </li>
+  <li>
+    Binding to user input events
+    <br>
+    <click-me>Loading........</click-me>
+    <br>
+  </li>
+  <li>
+    Get user input from the $event object 
+    <br>
+   <key-up>...</key-up>
+   <br>
+  </li> 
+  <li>
+    Get user input from a template reference variable 
+    <br>
+   <loop-back></loop-back>
+  </li>
+  <li> 
+    Key event filtering (with key.enter)
+    <br>
+   <key-up-enter></key-up-enter>
+  </li>
+  <li>
+    On blur event
+    <br>
+    <on-blur></on-blur>
+   </li> 
+   <li>  Adding hero to hero list
+   <br>
+   <little-tour></little-tour>
+   </ul>
+  </body>
+</html>
